@@ -1,6 +1,7 @@
 const elixir = require('laravel-elixir');
 
- elixir.config.publicPath = 'public';
+require('laravel-elixir-webpack-ts');
+
  elixir(mix => {
  	mix.sass('app.scss')
  	.webpack('app.js');
