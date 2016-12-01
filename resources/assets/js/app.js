@@ -7,4 +7,7 @@ require('bootstrap-sass');
 
 import angular from 'angular';
 
-angular.module('app', []);
+import appcont from './angular/app.controller'
+
+angular.module('app', [])
+	.controller('AppController', appcont);
